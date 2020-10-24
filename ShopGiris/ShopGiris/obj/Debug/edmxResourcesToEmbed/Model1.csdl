@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ShopEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="ShopModel.Category" />
+    <EntitySet Name="Employees" EntityType="ShopModel.Employee" />
+    <EntitySet Name="Products" EntityType="ShopModel.Product" />
+    <EntitySet Name="ReturnProducts" EntityType="ShopModel.ReturnProduct" />
+    <EntitySet Name="Sales" EntityType="ShopModel.Sale" />
+    <EntitySet Name="sysdiagrams" EntityType="ShopModel.sysdiagram" />
+    <AssociationSet Name="FK_Products_Categories" Association="ShopModel.FK_Products_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Employees" Association="ShopModel.FK_Sales_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Products" Association="ShopModel.FK_Sales_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReturnProducts_Sales" Association="ShopModel.FK_ReturnProducts_Sales">
+      <End Role="Sales" EntitySet="Sales" />
+      <End Role="ReturnProducts" EntitySet="ReturnProducts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Products" Relationship="ShopModel.FK_Products_Categories" FromRole="Categories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeesID" />
+    </Key>
+    <Property Name="EmployeesID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Surname" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Admin" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Sales" Relationship="ShopModel.FK_Sales_Employees" FromRole="Employees" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="Barcode" Type="Int32" Nullable="false" />
+    <Property Name="BuyPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="SellPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="ShopModel.FK_Products_Categories" FromRole="Products" ToRole="Categories" />
+    <NavigationProperty Name="Sales" Relationship="ShopModel.FK_Sales_Products" FromRole="Products" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="ReturnProduct">
+    <Key>
+      <PropertyRef Name="ReturnProductsID" />
+    </Key>
+    <Property Name="ReturnProductsID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SalesID" Type="Int32" Nullable="false" />
+    <Property Name="ReturnPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Sale" Relationship="ShopModel.FK_ReturnProducts_Sales" FromRole="ReturnProducts" ToRole="Sales" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="SalesID" />
+    </Key>
+    <Property Name="SalesID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeesID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="ShopModel.FK_Sales_Employees" FromRole="Sales" ToRole="Employees" />
+    <NavigationProperty Name="Product" Relationship="ShopModel.FK_Sales_Products" FromRole="Sales" ToRole="Products" />
+    <NavigationProperty Name="ReturnProducts" Relationship="ShopModel.FK_ReturnProducts_Sales" FromRole="Sales" ToRole="ReturnProducts" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Products_Categories">
+    <End Role="Categories" Type="ShopModel.Category" Multiplicity="0..1" />
+    <End Role="Products" Type="ShopModel.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Employees">
+    <End Role="Employees" Type="ShopModel.Employee" Multiplicity="1" />
+    <End Role="Sales" Type="ShopModel.Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeesID" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="EmployeesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Products">
+    <End Role="Products" Type="ShopModel.Product" Multiplicity="1" />
+    <End Role="Sales" Type="ShopModel.Sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReturnProducts_Sales">
+    <End Role="Sales" Type="ShopModel.Sale" Multiplicity="1" />
+    <End Role="ReturnProducts" Type="ShopModel.ReturnProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sales">
+        <PropertyRef Name="SalesID" />
+      </Principal>
+      <Dependent Role="ReturnProducts">
+        <PropertyRef Name="SalesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

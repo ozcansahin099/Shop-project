@@ -1,0 +1,38 @@
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe.config
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csprojResolveAssemblyReference.cache
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormGiris.resources
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.Properties.Resources.resources
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csproj.GenerateResource.Cache
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.pdb
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.dll
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.xml
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.exe
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.pdb
+C:\Users\özcan\Desktop\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormAdmin.resources
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe.config
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.exe
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.pdb
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.pdb
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.dll
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.xml
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csprojResolveAssemblyReference.cache
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormAdmin.resources
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormGiris.resources
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.Properties.Resources.resources
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csproj.GenerateResource.Cache
+C:\Users\x\Desktop\Yazılım kursu Dökümanları\c# ,SQL ve görevler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormPersonel.resources
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe.config
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.exe
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.pdb
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.exe
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\ShopGiris.pdb
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.dll
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\bin\Debug\EntityFramework.xml
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csprojResolveAssemblyReference.cache
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormAdmin.resources
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormGiris.resources
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.FormPersonel.resources
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.Properties.Resources.resources
+C:\Users\x\Desktop\Github projeler\Proje Ödevi\ShopGiris\ShopGiris\obj\Debug\ShopGiris.csproj.GenerateResource.Cache
